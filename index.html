@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Examen Tailwind CSS</title>
+    <title>ConcertHub</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -11,8 +11,7 @@
                 extend: {
                     screens: {
                         'mobile': '800px',
-                        'custom': '801px',
-                        'desktop': '1281px',
+                        'desktop': '801px',
                     }
                 }
             }
@@ -20,6 +19,261 @@
     </script>
 </head>
 <body>
+    <nav class="bg-white p-4 w-full z-50 shadow-sm">
+    <div class="container mx-auto flex justify-between items-center px-8">
+      <h1 class="text-pink-500 text-3xl font-bold italic">ConcertHub</h1>
+      <ul class="hidden md:flex gap-8 font-medium items-center">
+        <li>
+          <a href="#" class="flex items-center gap-2 hover:text-pink-500 transition">
+            <img src="imagenes/call.png" class="w-5" alt="">
+            <span>Contact us</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="flex items-center gap-2 hover:text-pink-500 transition">
+            <img src="imagenes/ticket.png" class="w-5" alt="">
+            <span>Tickets</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="flex items-center gap-2 hover:text-pink-500 transition">
+            <img src="imagenes/document.png" class="w-5" alt="">
+            <span>Blogs</span>
+          </a>
+        </li>
+        <li>
+            <select class="border border-gray-300 px-3 py-2 rounded hover:border-pink-500 transition">
+                <option value="En">En</option>
+                <option value="Fr">Fr</option>
+                <option value="De">De</option>
+                <option value="Sp">Sp</option>
+            </select>
+        </li>
+        <li>
+            <a href="#" class="bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition flex items-center gap-2">
+              <span>Profile</span>
+            </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <main class="mt-20 min-h-screen">
+    <div class="flex items-center justify-between px-8 py-16 bg-white">
+      <div class="flex-1">
+        <h1 class="text-5xl font-bold mb-4 text-black">Beyoncé Live in Concert!</h1>
+        <p class="text-gray-500 text-lg mb-2">A Night to Remember!</p>
+        <p class="text-gray-600 mb-6 max-w-md">Get ready for an extraordinary night with Beyoncé with breathtaking performances and unforgettable moments. Don't wait – secure your tickets</p>
+        <button class="bg-pink-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-pink-600 transition">Get Ticket</button>
+      </div>
+      <div class="flex-1 flex justify-end">
+        <img src="imagenes/Banner photo.png" alt="Beyoncé" class="w-full max-w-lg rounded-3xl shadow-lg">
+      </div>
+    </div>
     
+    <div class="bg-gray-700 px-8 py-12">
+      <h2 class="text-gray-300 mb-4 text-lg">Find your favorite concert</h2>
+      <input class="bg-gray-600 p-4 w-full text-white rounded-2xl placeholder-gray-400 mb-6" type="text" placeholder="Search by Artist, Event or Venue">
+      <div class="flex gap-4 flex-wrap">
+        <a class="bg-gray-600 px-4 py-2 rounded-full text-white hover:bg-gray-500 transition" href="#">#Summer</a>
+        <a class="bg-gray-600 px-4 py-2 rounded-full text-white hover:bg-gray-500 transition" href="#">#Jazz</a>
+        <a class="bg-gray-600 px-4 py-2 rounded-full text-white hover:bg-gray-500 transition" href="#">#TaylorSwift</a>
+        <a class="bg-gray-600 px-4 py-2 rounded-full text-white hover:bg-gray-500 transition" href="#">#NewYork</a>
+      </div>
+    </div>
+    
+    <div class="px-8 py-12">
+      <div class="flex justify-between items-center mb-8">
+        <h2 class="text-3xl font-bold">Upcoming Concerts</h2>
+        <a href="#" class="text-pink-500 font-semibold hover:text-pink-600 transition">See All</a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="rounded-2xl border border-gray-300 overflow-hidden transition">
+          <img src="imagenes/Frame 427319936.png" alt="Taylor Swift" class="w-full h-70 object-cover">
+          <div class="p-4 text-center">
+            <p class="font-semibold text-lg">Taylor Swift</p>
+            <p class="text-gray-600">San Diego</p>
+            <p class="text-gray-600">Dec 14, 21:00</p>
+            <p class="text-pink-500 font-semibold mt-2">From $170</p>
+          </div>
+        </div>
+        <div class="rounded-2xl border border-gray-300 overflow-hidden transition">
+          <img src="imagenes/Frame 427319935.png" alt="Celine Dion" class="w-full h-70 object-cover">
+          <div class="p-4 text-center">
+            <p class="font-semibold text-lg">Celine Dion</p>
+            <p class="text-gray-600">New York</p>
+            <p class="text-gray-600">Dec 13, 21:00</p>
+            <p class="text-pink-500 font-semibold mt-2">From $120</p>
+          </div>
+        </div>
+        <div class="rounded-2xl border border-gray-300 overflow-hidden transition">
+          <img src="imagenes/Frame 427319938.png" alt="Justin Bieber" class="w-full h-70 object-cover">
+          <div class="p-4 text-center">
+            <p class="font-semibold text-lg">Justin Bieber</p>
+            <p class="text-gray-600">San Francisco</p>
+            <p class="text-gray-600">Dec 16, 20:00</p>
+            <p class="text-pink-500 font-semibold mt-2">From $170</p>
+          </div>
+        </div>
+        <div class="rounded-2xl border border-gray-300 overflow-hidden transition">
+          <img src="imagenes/Frame 427319934.png" alt="Sila Gencoglu" class="w-full h-70 object-cover">
+          <div class="p-4 text-center">
+            <p class="font-semibold text-lg">Sila Gencoglu</p>
+            <p class="text-gray-600">New York</p>
+            <p class="text-gray-600">Dec 18, 22:00</p>
+            <p class="text-pink-500 font-semibold mt-2">From $100</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="px-8 py-12 bg-gray-50">
+      <div class="flex justify-between items-center mb-8">
+        <h2 class="text-3xl font-bold">Popular Near You</h2>
+        <a href="#" class="text-pink-500 font-semibold hover:text-pink-600 transition">See All</a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="rounded-2xl border border-gray-300 overflow-hidden transition bg-white">
+          <img src="imagenes/Frame 427319933.png" alt="Jennifer Lopez" class="w-full h-70 object-cover">
+          <div class="p-4 text-center">
+            <p class="font-semibold text-lg">Jennifer Lopez</p>
+            <p class="text-gray-600">Seattle</p>
+            <p class="text-gray-600">Dec 12, 21:00</p>
+            <p class="text-pink-500 font-semibold mt-2">From $150</p>
+          </div>
+        </div>
+        <div class="rounded-2xl border border-gray-300 overflow-hidden transition bg-white">
+          <img src="imagenes/Frame 427319932.png" alt="Zach Bryan" class="w-full h-70 object-cover">
+          <div class="p-4 text-center">
+            <p class="font-semibold text-lg">Zach Bryan</p>
+            <p class="text-gray-600">Miami</p>
+            <p class="text-gray-600">Dec 08, 22:00</p>
+            <p class="text-pink-500 font-semibold mt-2">From $100</p>
+          </div>
+        </div>
+        <div class="rounded-2xl border border-gray-300 overflow-hidden transition bg-white">
+          <img src="imagenes/Frame 427319939.png" alt="Usher" class="w-full h-70 object-cover">
+          <div class="p-4 text-center">
+            <p class="font-semibold text-lg">Usher</p>
+            <p class="text-gray-600">Los Angeles</p>
+            <p class="text-gray-600">Dec 04, 21:00</p>
+            <p class="text-pink-500 font-semibold mt-2">From $120</p>
+          </div>
+        </div>
+        <div class="rounded-2xl border border-gray-300 overflow-hidden transition bg-white">
+          <img src="imagenes/Frame 427319937.png" alt="Adele" class="w-full h-70 object-cover">
+          <div class="p-4 text-center">
+            <p class="font-semibold text-lg">Adele</p>
+            <p class="text-gray-600">Las Vegas</p>
+            <p class="text-gray-600">Dec 03, 20:00</p>
+            <p class="text-pink-500 font-semibold mt-2">From $150</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="px-8 py-12">
+      <h2 class="text-3xl font-bold mb-8">Explore by Category</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+        <div class="rounded-2xl border border-gray-300 overflow-hidden cursor-pointer group">
+          <div class="relative h-48 overflow-hidden">
+            <img src="imagenes/Category Final_1.png" alt="Category" class="w-full h-48 object-cover transition-transform duration-300">
+            <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-4 text-center">
+              <p class="font-semibold text-white">Folk</p>
+            </div>
+          </div>
+        </div>
+        <div class="rounded-2xl border border-gray-300 overflow-hidden cursor-pointer group">
+          <div class="relative h-48 overflow-hidden">
+            <img src="imagenes/Category Final_2.png" alt="Category" class="w-full h-48 object-cover transition-transform duration-300">
+            <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-4 text-center">
+              <p class="font-semibold text-white">Classic</p>
+            </div>
+          </div>
+        </div>
+        <div class="rounded-2xl border border-gray-300 overflow-hidden cursor-pointer group">
+          <div class="relative h-48 overflow-hidden">
+            <img src="imagenes/Category Final_3.png" alt="Category" class="w-full h-48 object-cover transition-transform duration-300">
+            <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-4 text-center">
+              <p class="font-semibold text-white">Pop</p>
+            </div>
+          </div>
+        </div>
+        <div class="rounded-2xl border border-gray-300 overflow-hidden cursor-pointer group">
+          <div class="relative h-48 overflow-hidden">
+            <img src="imagenes/Category Final_4.png" alt="Category" class="w-full h-48 object-cover transition-transform duration-300">
+            <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-4 text-center">
+              <p class="font-semibold text-white">Jazz</p>
+            </div>
+          </div>
+        </div>
+        <div class="rounded-2xl border border-gray-300 overflow-hidden cursor-pointer group">
+          <div class="relative h-48 overflow-hidden">
+            <img src="imagenes/Category Final_5.png" alt="Category" class="w-full h-48 object-cover transition-transform duration-300">
+            <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-4 text-center">
+              <p class="font-semibold text-white">Rock</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="px-8 py-12">
+        <h2 class="text-3xl font-bold mb-8">Artists</h2>
+        <div class="flex justify-center">
+            <img src="imagenes/Ellipse 143.png" alt="" class="rounded-full">
+            <img src="imagenes/Ellipse 144.png" alt="" class="rounded-full">
+            <img src="imagenes/Ellipse 145.png" alt="" class="rounded-full">
+            <img src="imagenes/Ellipse 146.png" alt="" class="rounded-full">
+            <img src="imagenes/Ellipse 147.png" alt="" class="rounded-full">
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-800 px-8 py-16">
+      <div class="flex justify-between items-start mb-12">
+        <div>
+          <h2 class="text-4xl font-bold text-white mb-3">The latest in music, tours & artists</h2>
+          <p class="text-gray-400 text-lg">Uncovering the hottest music, breaking tour news, and artist spotlights</p>
+        </div>
+        <a href="#" class="text-white font-semibold hover:text-pink-500 transition">Explore All</a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="rounded-2xl overflow-hidden bg-white hover:shadow-xl transition">
+          <img src="imagenes/Frame 427319946.png" alt="Article" class="w-full h-70 object-cover">
+          <div class="p-6">
+            <div class="flex gap-4 mb-3 text-sm text-gray-500">
+              <span>105 Comments</span>
+              <span>@100K</span>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-3">Ariana Grande: A Pop Sensation Redefining the Music Industry</h3>
+            <p class="text-gray-600 text-sm">Ariana Grande has become a household name, dominating the music industry with her powerful vocals, relatable lyrics, and charismatic persona.</p>
+          </div>
+        </div>
+        <div class="rounded-2xl overflow-hidden bg-white hover:shadow-xl transition">
+          <img src="imagenes/Frame 427319947.png" alt="Article" class="w-full h-70 object-cover">
+          <div class="p-6">
+            <div class="flex gap-4 mb-3 text-sm text-gray-500">
+              <span>35 Comments</span>
+              <span>@10K</span>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-3">Rihanna Performs First Concert in Eight Years at Pre-Wedding Party in India</h3>
+            <p class="text-gray-600 text-sm">Rihanna hit the stage at a lavish pre-wedding event in India to perform her first concert in nearly eight years.</p>
+          </div>
+        </div>
+        <div class="rounded-2xl overflow-hidden bg-white hover:shadow-xl transition">
+          <img src="imagenes/Frame 427319948.png" alt="Article" class="w-full h-70 object-cover">
+          <div class="p-6">
+            <div class="flex gap-4 mb-3 text-sm text-gray-500">
+              <span>85 Comments</span>
+              <span>@15K</span>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-3">Azealia Banks Announces Back To The Union Jack UK Tour For September</h3>
+            <p class="text-gray-600 text-sm">The New York singer and rapper will kick off her Back To The Union Jack Tour at London's O2 Academy Brixton, Leeds, Glasgow, Birmingham, Liver...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="px-8 py-12">
+        <h2 class="text-4xl font-bold text-white mb-3">What our coustomers say</h2>
+        <p></p>
+    </div>
+  </main>
 </body>
 </html>
